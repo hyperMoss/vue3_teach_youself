@@ -8,7 +8,8 @@
 --> 
 <template
   >
-  <div>Ref</div>
+  <div>
+      <div>Ref</div>
   <div>x:{{ x }}y:{{ y }}</div>
  <div>Reactive</div>
 <div>x:{{ pos.j }}y:{{ pos.k }}</div>
@@ -18,11 +19,13 @@
 <div>x:{{posDeep.j}}y:{{ posDeep.k }}</div>
 <div>Reactive+ToRef</div>
 <div>x:{{m}}y:{{ n }}</div>
+  </div>
+
 </template>
 
 <script>
 // 将之前的函数引入组件
-import { useMousePosition,useMousePositionReactive,useMousePositionToRefs } from "./mouseFunc/index";
+import { useMousePosition,useMousePositionReactive,useMousePositionToRefs } from "../components/mouseFunc/index";
 
 export default {
   // 将其放入setup 装载区间
