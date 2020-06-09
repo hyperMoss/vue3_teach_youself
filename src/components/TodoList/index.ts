@@ -11,8 +11,8 @@ import { reactive, ref } from 'vue';
 
 export default  {
 	setup() {
-		const newTodoText = ref('');
-		const todos = reactive([
+		const newTodoText:any = ref('');
+		const todos: Object[] = reactive([
 			{
 				id: 1,
 				title: 'Do the dishes',
@@ -26,12 +26,12 @@ export default  {
 				title: 'Mow the lawn',
 			},
 		]);
-		const nextTodoId = ref(4);
-		const addNewTodo = useAddTodo(todos, nextTodoId, newTodoText);
+		const nextTodoId :any = ref(4);
+		const addNewTodo :Function = useAddTodo(todos, nextTodoId, newTodoText);
 		return { newTodoText, todos, nextTodoId, addNewTodo };
 	},
 };
-function useAddTodo(todos, nextTodoId, newTodoText) {
+function useAddTodo(todos :Object[], nextTodoId:any, newTodoText:any) {
 	const addNewTodo = function() {
 		todos.push({
 			id: nextTodoId.value++,

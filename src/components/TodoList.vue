@@ -32,7 +32,7 @@
 
 <script>
 import TodoItem from './TodoItem.vue';
-import setupFunc from './TodoList/index.js'
+import setupFunc from './TodoList/index.ts'
 export default {
   props: {
     name: String,
