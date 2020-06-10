@@ -15,18 +15,18 @@
           :name="viewName"
           v-slot="{ Component, props }"
         >
-          <transition
+          <!-- <transition
             name="fade"
             mode="out-in"
             @before-enter="flushWaiter"
             @before-leave="setupWaiter"
-          >
+          > -->
           <component
             :is="Component"
             v-bind="props"
             v-if="Component"
           />
-          </transition>
+          <!-- </transition> -->
         </router-view>
       </template>
       <template #fallback>

@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import { scrollWaiter } from './scrollWaiter.ts';
 import { globalState } from './store.ts';
+import ComponentWithData from './views/ComponentWithData.vue';
 import Home from './views/Home.vue';
 import Mouse from './views/Mouse.vue';
 import TodoList from './views/Todo.vue';
@@ -42,6 +43,7 @@ export const router = createRouter({
       return component()
     },
   },
+  { path: '/with-data', component: ComponentWithData, name: 'WithData' },
 ],
   async scrollBehavior(to, from, savedPosition) {
     await scrollWaiter.wait()
