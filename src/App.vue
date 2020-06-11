@@ -9,6 +9,7 @@
 <template>
   <div id="app">
     <NavBar></NavBar>
+    <div id="body-title"></div>
     <Suspense>
       <template #default>
         <router-view
