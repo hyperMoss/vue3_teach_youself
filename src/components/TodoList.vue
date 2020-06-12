@@ -1,7 +1,7 @@
 <!--
  * @Author: Dongzy
  * @since: 2020-06-08 13:39:00
- * @lastTime: 2020-06-08 15:37:47
+ * @lastTime: 2020-06-11 21:34:05
  * @LastAuthor: Dongzy
  * @FilePath: \vue3_teach_youself\src\components\TodoList.vue
  * @message: 
@@ -39,7 +39,7 @@ export default {
   },
   components: { TodoItem },
   	setup(props) {
-      const {newTodoText, todos, nextTodoId, addNewTodo}= setupFunc.setup()
+      const {newTodoText, todos, nextTodoId, addNewTodo}= setupFunc.ok()
 		return { newTodoText, todos, nextTodoId, addNewTodo, msg: `hello ${props.name}!` };
 	},
 };

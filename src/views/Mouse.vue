@@ -1,9 +1,9 @@
 <!--
  * @Author: Dongzy
  * @since: 2020-06-05 17:38:46
- * @lastTime: 2020-06-06 12:05:43
+ * @lastTime: 2020-06-11 21:06:25
  * @LastAuthor: Dongzy
- * @FilePath: \vue3_teach_youself\src\components\Mouse.vue
+ * @FilePath: \vue3_teach_youself\src\views\Mouse.vue
  * @message: 
 --> 
 <template
@@ -31,9 +31,13 @@ export default {
   // 将其放入setup 装载区间
   setup() {
     const { x, y } = useMousePosition();
+    // const x =1,y=0
     const pos = useMousePositionReactive();
+    // 解构
     const {j,k} = useMousePositionReactive();
+    // 结构
     const posDeep={...useMousePositionReactive()}
+    // 
     const {m,n}= useMousePositionToRefs()
     // 其他逻辑...
     return { x, y,pos,k,j,posDeep,m,n };

@@ -3,14 +3,14 @@ import { reactive, ref } from 'vue';
 /*
  * @Author: Dongzy
  * @since: 2020-06-08 14:30:48
- * @lastTime: 2020-06-08 15:33:26
+ * @lastTime: 2020-06-11 21:33:46
  * @LastAuthor: Dongzy
- * @FilePath: \vue3_teach_youself\src\components\TodoList\index.js
+ * @FilePath: \vue3_teach_youself\src\components\TodoList\index.ts
  * @message:
  */
 
 export default  {
-	setup() {
+	ok() {
 		const newTodoText:any = ref('');
 		const todos: Object[] = reactive([
 			{
